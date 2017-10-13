@@ -1,8 +1,6 @@
 ﻿@using EPiServer.Core
 @using EPiServer.Web.Mvc.Html
 
-@model EpiserverBase.Models.Pages.StartPage
+@model PageViewModel<EpiserverBase.Models.Pages.StartPage>
 
-<div>
-	@Html.PropertyFor(m => m.MainBody)
-</div>
+@Html.PropertyFor(m => m.CurrentPage.MainBody)
