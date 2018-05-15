@@ -249,6 +249,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="Models\Media\GenericMedia.cs" />
+    <Compile Include="Models\Media\ImageFile.cs" />
+    <Compile Include="Models\Media\VideoFile.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\Properties\PropertyStringList.cs" />
@@ -259,7 +262,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Blocks\" />
-    <Folder Include="Models\Media\" />
     <Folder Include="Views\PageBase\" />
   </ItemGroup>
   <ItemGroup>
@@ -271,7 +273,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
     <Content Include="App_Data\GeoLiteCity.dat" />
-    <Content Include="connections.sample.config" />
     <None Include="EPiServerLog.config" />
     <Content Include="modules\_protected\EPiServer.Packaging.UI\web.config" />
     <Content Include="modules\_protected\EPiServer.Packaging.UI\EPiServer.Packaging.UI.zip" />
