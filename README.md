@@ -41,7 +41,21 @@ Alternatively, you can create your own database and run the SQL scripts found at
 
 Confirm the site works by starting the debugger. After a few seconds, a 404 error should be displayed. This is because a start page has not been created.
 
+### First Steps
+
 Add */episerver* to the end of the URL and verify that you can log in using your Windows account credentials.
+
+You will want to create a Start page from Edit mode. Then switch to Admin mode and configure the website (Admin > Config > Manage Websites). The following settings may be helpful:
+
+**Name**: {Your website's name}
+
+**URL**: {Use the URL in the address bar} (e.g. http://localhost:64473)
+
+**Host Name**: {Grab from the URL} (e.g. localhost:64473)
+
+**Culture**: en
+
+**Type**: Primary
 
 ## Versioning
 
