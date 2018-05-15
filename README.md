@@ -35,11 +35,13 @@ To add the Episerver NuGet feed to Visual Studio:
 
 Clone the repository to an empty folder on your system if you have not already done so, and open the solution (.sln) file in Visual Studio.
 
-Confirm the site works by starting the debugger. It should open a new browser window with a short message about Visual Studio debugging. After a few seconds, the home page (or a 404 error) should be displayed.
+To create the database, copy the *EPiServer.Cms.mdf* file from *packages/EPiServer.CMS.11.7.0/tools* to the *EpiserverBase/App_Data* folder. Then, open the package manager console in Visual Studio (Tools > NuGet Package Manager > Package Manager Console) and run the following command: `Initialize-EPiDatabase`
+
+Alternatively, you can create your own database and run the SQL scripts found at *packages/EPiServer.CMS.Core.11.7.0/tools/EPiServer.Cms.Core.sql*. You will need to update the *EpiserverBase/connections.config* file afterward if you choose this method.
+
+Confirm the site works by starting the debugger. After a few seconds, a 404 error should be displayed. This is because a start page has not been created.
 
 Add */episerver* to the end of the URL and verify that you can log in using your Windows account credentials.
-
-Note that when you stop debugging or close the browser window, the site will not be accessible anymore. To keep the site running while not debugging, press `ctrl+F5` in Visual Studio.
 
 ## Versioning
 
@@ -47,4 +49,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Thomas Higginbotham** - *Initial work* - [Experis](http://experisspark.com/)
+* **Thomas Higginbotham** - *Initial work* - [Experis](https://experisspark.com/author/thigginbotham/)

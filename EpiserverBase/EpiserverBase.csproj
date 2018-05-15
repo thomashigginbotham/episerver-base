@@ -270,8 +270,8 @@
     <Content Include="Static\js\main.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
     <Content Include="App_Data\GeoLiteCity.dat" />
+    <Content Include="connections.sample.config" />
     <None Include="EPiServerLog.config" />
     <Content Include="modules\_protected\EPiServer.Packaging.UI\web.config" />
     <Content Include="modules\_protected\EPiServer.Packaging.UI\EPiServer.Packaging.UI.zip" />
@@ -286,12 +286,6 @@
     <Content Include="Views\StartPage\Index.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
