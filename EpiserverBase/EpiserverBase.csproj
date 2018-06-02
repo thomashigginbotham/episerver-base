@@ -265,7 +265,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Blocks\" />
-    <Folder Include="Views\PageBase\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientResources\Scripts\Editors\StringList.js" />
@@ -279,6 +278,7 @@
     <Content Include="Global.asax" />
     <Content Include="connections.config" />
     <Content Include="App_Data\GeoLiteCity.dat" />
+    <Content Include=".editorconfig" />
     <None Include="EPiServerLog.config" />
     <Content Include="module.config" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />

@@ -3,13 +3,13 @@ using EpiserverBase.Models.Pages;
 
 namespace EpiserverBase.Models.ViewModels
 {
-	/// <summary>
-	/// Defines common view model characteristics for pages.
-	/// </summary>
-	public interface IPageViewModel<out T> where T : SitePageData
-	{
-		T CurrentPage { get; }
-		LayoutModel Layout { get; set; }
-		IContent Section { get; set; }
-	}
+    /// <summary>
+    /// Defines common view model characteristics for pages.
+    /// </summary>
+    public interface IPageViewModel<out T> where T : SitePageData
+    {
+        T CurrentPage { get; }
+        LayoutModel Layout { get; set; }
+        IContent Section { get; set; }
+    }
 }

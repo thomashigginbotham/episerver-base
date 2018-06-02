@@ -1,6 +1,6 @@
 ﻿// Main JavaScript
 (function () {
-	'use strict';
+    'use strict';
 
-	// Add your code
+    // Add your code
 })();

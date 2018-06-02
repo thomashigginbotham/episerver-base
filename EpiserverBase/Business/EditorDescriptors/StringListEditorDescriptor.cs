@@ -7,18 +7,18 @@ using EPiServer.Shell.ObjectEditing;
 
 namespace EpiserverBase.Business.EditorDescriptors
 {
-	[EditorDescriptorRegistration(
-		TargetType = typeof(string[]),
-		UIHint = Global.SiteUIHints.Strings)]
-	public class StringListEditorDescriptor : EditorDescriptor
-	{
-		public override void ModifyMetadata(
-			ExtendedMetadata metadata,
-			IEnumerable<Attribute> attributes)
-		{
-			ClientEditingClass = "episerverbase/editors/StringList";
+    [EditorDescriptorRegistration(
+        TargetType = typeof(string[]),
+        UIHint = Global.SiteUIHints.Strings)]
+    public class StringListEditorDescriptor : EditorDescriptor
+    {
+        public override void ModifyMetadata(
+            ExtendedMetadata metadata,
+            IEnumerable<Attribute> attributes)
+        {
+            ClientEditingClass = "episerverbase/editors/StringList";
 
-			base.ModifyMetadata(metadata, attributes);
-		}
-	}
+            base.ModifyMetadata(metadata, attributes);
+        }
+    }
 }

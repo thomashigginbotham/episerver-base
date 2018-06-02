@@ -2,8 +2,8 @@
 
 namespace EpiserverBase.Models.ViewModels
 {
-	public class LayoutModel
-	{
-		public MvcHtmlString SearchActionUrl { get; set; }
-	}
+    public class LayoutModel
+    {
+        public MvcHtmlString SearchActionUrl { get; set; }
+    }
 }
