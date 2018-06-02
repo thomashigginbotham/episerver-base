@@ -21,8 +21,11 @@
 	<body>
 		@Html.FullRefreshPropertiesMetaData()
 
+		@Html.Partial("Header", Model)
 		@Html.Partial("MainMenu", Model)
 
-		@RenderBody()
+		<main>
+			@RenderBody()
+		</main>
 	</body>
 </html>
