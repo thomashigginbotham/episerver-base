@@ -59,7 +59,7 @@ namespace EpiserverBase.Models.Pages
             GroupName = Global.GroupNames.Metadata,
             Order = 300)]
         [CultureSpecific]
-        [UIHint(UIHint.LongString)]
+        [UIHint(UIHint.Textarea)]
         public virtual string MetaDescription
         {
             get; set;
