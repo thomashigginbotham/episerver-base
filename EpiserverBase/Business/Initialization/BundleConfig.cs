@@ -23,6 +23,7 @@ namespace EpiserverBase.Business.Initialization
 		{
 			bundles.Add(new ScriptBundle("~/bundles/js")
 				.Include("~/Static/js/main.js")
+				.Include("~/Static/js/main-menu.js")
 			);
 
 			bundles.Add(new StyleBundle("~/bundles/css")
