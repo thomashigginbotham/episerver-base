@@ -1,4 +1,7 @@
-﻿using EPiServer.Core;
+﻿using System.Linq;
+using EPiServer;
+using EPiServer.Core;
+using EPiServer.ServiceLocation;
 using EpiserverBase.Models.Pages;
 
 namespace EpiserverBase.Models.ViewModels
@@ -7,12 +10,16 @@ namespace EpiserverBase.Models.ViewModels
     {
         public PageViewModel(T currentPage)
         {
+            var contentLoader = ServiceLocator.Current.GetInstance<IContentLoader>();
+
+            Settings = contentLoader
+                .GetChildren<SiteSettingsPage>(ContentReference.RootPage)
+                .FirstOrDefault();
             CurrentPage = currentPage;
         }
 
         public T CurrentPage { get; private set; }
-        public LayoutModel Layout { get; set; }
-        public IContent Section { get; set; }
+        public SiteSettingsPage Settings { get; private set; }
     }
 
     public static class PageViewModel

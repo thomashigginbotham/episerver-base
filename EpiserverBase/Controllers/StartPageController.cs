@@ -1,4 +1,5 @@
-﻿using EpiserverBase.Models.Pages;
+﻿using EPiServer.Web.Mvc;
+using EpiserverBase.Models.Pages;
 using EpiserverBase.Models.ViewModels;
 using System.Web.Mvc;
 
