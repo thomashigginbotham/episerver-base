@@ -5,7 +5,7 @@
     <h1>
         @if (Model.Settings != null && Model.Settings.LogoImage != null)
         {
-            @Html.DisplayFor(m => m.Settings.LogoImage)
+            @Html.DisplayFor(m => m.Settings.LogoImage, new { Size = "Thumbnail" })
         }
         else
         {

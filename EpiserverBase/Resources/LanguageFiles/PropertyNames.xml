@@ -17,6 +17,12 @@
             <caption>Title</caption>
             <help>Used as the value of the &lt;title&gt; tag.</help>
           </metatitle>
+
+          <!-- Media Types-->
+          <alttext>
+            <caption>Alternate Text</caption>
+            <help>Text to help describe media to users that cannot see it.</help>
+          </alttext>
         </properties>
       </icontentdata>
     </contenttypes>

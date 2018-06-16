@@ -1,5 +1,8 @@
-﻿using EPiServer.Core;
+﻿using EPiServer;
+using EPiServer.Core;
 using EPiServer.Filters;
+using EPiServer.ServiceLocation;
+using EpiserverBase.Models.Media;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +15,28 @@ namespace EpiserverBase.Business
     /// </summary>
     public static class ContentExtensions
     {
+        /// <summary>
+		/// Returns the AltText property value of an ImageFile.
+		/// </summary>
+		public static string ImageAltText(this ContentReference contentLink)
+        {
+            if (contentLink == null)
+            {
+                return null;
+            }
+
+            var contentRepository = ServiceLocator.Current
+                .GetInstance<IContentRepository>();
+            var content = contentRepository.Get<IContent>(contentLink);
+
+            if (!(content is ImageFile imageFile))
+            {
+                return null;
+            }
+
+            return imageFile.AltText;
+        }
+
         /// <summary>
         /// Filters out content that should not be visible to the user.
         /// </summary>

@@ -15,11 +15,12 @@ namespace EpiserverBase.Models.Media
         /// <summary>
         /// Gets or sets a short description of the image.
         /// </summary>
-        [CultureSpecific]
         [Display(
             GroupName = SystemTabNames.Content,
             Order = 100)]
-        public virtual string Description { get; set; }
+        [CultureSpecific]
+        [Required]
+        public virtual string AltText { get; set; }
 
         /// <summary>
         /// A small version of the image (accessible at "/path/to/image.jpg/Small").
