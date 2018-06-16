@@ -2,7 +2,14 @@
 
 **This is a sample README file and should be modified with your own project details.**
 
-Episerver Base aims to provide a clean starting point without having to pull in a lot of additional code from the Alloy template just to get things up and running. It includes features not available in an empty Episerver project that are common to most websites (e.g. support for page titles and meta keywords and descriptions).
+Episerver Base aims to provide a clean starting point without having to pull in a lot of additional code from the Alloy template just to get things up and running. It includes features not available in an empty Episerver project that are common to most websites such as:
+
+* Meta title, keywords, and description properties
+* Image alt text
+* Script and style bundling
+* Common media types
+* Accessible drop-down menu
+* And more to come...
 
 ## Getting Started
 
