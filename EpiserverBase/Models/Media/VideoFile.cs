@@ -10,7 +10,7 @@ namespace EpiserverBase.Models.Media
 {
     [ContentType(GUID = "d96dbe79-af8f-4dab-a885-5e2dba9184c2")]
     [MediaDescriptor(ExtensionString = "mp4,webm")]
-    public class VideoFile : MediaData
+    public class VideoFile : VideoData
     {
         /// <summary>
         /// Gets or sets a description of the video.
