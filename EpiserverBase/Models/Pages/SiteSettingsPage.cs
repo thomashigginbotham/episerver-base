@@ -9,15 +9,15 @@ using EPiServer.Web;
 
 namespace EpiserverBase.Models.Pages
 {
-    [ContentType(DisplayName = "Site Settings", GUID = "df56a3b0-be6c-4450-8cd8-4e7f18c9004d", Description = "")]
+    [ContentType(
+        GUID = "df56a3b0-be6c-4450-8cd8-4e7f18c9004d",
+        GroupName = Global.GroupNames.Specialized)]
     public class SiteSettingsPage : PageData
     {
-        [CultureSpecific]
         [Display(
-            Name = "Logo Image",
-            Description = "The website logo.",
             GroupName = SystemTabNames.Content,
             Order = 100)]
+        [CultureSpecific]
         [UIHint(UIHint.Image)]
         public virtual ContentReference LogoImage { get; set; }
     }
