@@ -11,8 +11,11 @@ namespace EpiserverBase
         [GroupDefinitions()]
         public static class GroupNames
         {
-            [Display(Name = "Metadata", Order = 2)]
+            [Display(Name = "Metadata", Order = 10)]
             public const string Metadata = "Metadata";
+
+            [Display(Name = "Specialized", Order = 15)]
+            public const string Specialized = "Specialized";
         }
 
         /// <summary>
